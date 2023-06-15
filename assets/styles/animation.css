@@ -1,0 +1,10 @@
+/* classe */
+.cacher{
+    display: none;
+}
+
+.montrer{
+    display: block;
+}
+
+/* id */

@@ -1,0 +1,12 @@
+logo instagram:
+ -ibrandify
+ -<a href="http://www.freepik.com">Designed by ibrandify / Freepik</a>
+
+logo linkedin:
+ -riajulislam
+ -<a href="htpp://www.freepik.com">Designed by riajulislam / Freepik</a>
+
+logo facebook:
+ -Pixel perfect
+ -<a href="htpp://www.freepik.com">Designed by  Pixel perfect / Freepik</a>
+
