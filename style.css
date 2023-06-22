@@ -1,0 +1,423 @@
+:root{
+    --blanc: #fff;
+    --blanc2: #F1F1F1;
+    --gris: #f3f3f3;
+    --gris2: #D5D5D5;
+    --orange: #ff8b2d;
+    --bleu: #165999;
+}
+
+*,::before,::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    background-color: var(--gris1);
+    scroll-behavior: smooth;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+em,p,h1,h2,h3,h4{
+    width: fit-content;
+}
+
+ul{
+    list-style: none;
+}
+
+section{
+    min-height: 100vh;
+}
+
+/* header */
+header{
+    height: 22vh;
+    position: relative;
+    border-bottom: 1px solid black;
+}
+header li{
+    cursor: pointer;
+}
+
+#logoE2C{
+    width: 11.5vw;
+    position: absolute;
+    left: 2%;
+}
+
+.topHeaderMenue{
+    height: 5.5vh;
+    background-color: var(--gris2);
+}
+.topHeaderMenue ul{
+    height: 100%;
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: clamp(15px, 2%, 5%);
+}
+.topHeaderMenue li{
+    margin: 0 2%;
+}
+
+.bottomHeaderMenue{
+    height: 75%;
+}
+.bottomHeaderMenue ul{
+    height: 100%;
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: clamp(15px, 2%, 5%);
+}
+/* accueil */
+#accueil{
+    border-top: 5px solid var(--blanc2);
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+    border-bottom: 5px solid black;
+    height: 105vh;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+}
+#accueil img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    aspect-ratio: 3/2;
+}
+
+/* authentification */
+#authentification{
+    margin-bottom: 2%;
+    padding: 10% 0;
+}
+#authentification h1{
+    background-color: var(--gris);
+    width: fit-content;
+    margin: 0 auto;
+    font-size: 2rem;
+}
+#authentification span{
+    height: 1vh;
+    width: 50%;
+    background-color: orange;
+}
+
+.conteneurAuthentification{
+    display: flex;
+    justify-content: space-around;
+}
+
+#blue{
+    background-color: var(--bleu);
+    border: 1px solid var(--bleu);
+}
+
+.entite{
+    width: 50%;
+    border: 1px solid var(--gris2 );
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.entite img{
+    border-radius: 5px;
+    width: 45%;
+}
+.entite h2{
+    padding: 1% 0;
+}
+
+.lienAuthentification{
+    border: 1px solid var(--orange);
+    background-color: var(--orange);
+    width: 25%;
+    text-align: center;
+    padding: 2%;
+    border-radius: 50px;
+    min-width: fit-content;
+}
+.lienAuthentification a{
+    color: white;
+    cursor: pointer;
+}
+
+/* video */
+#video{
+    height: 150vh;
+    clip-path: polygon(0% 15%, 100% 0%, 100% 80%, 0% 100%);
+    background-image: url(assets/img/fond/imageFond.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.descriptionVideo{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: var(--blanc2);
+}
+
+.emplacementVideo{
+    width: 35%;
+    border: 1px solid black;
+}
+.emplacementVideo video{
+    width: 100%;
+}
+
+/* evenement */
+#evenement h2{
+    width: fit-content;
+    font-size: 2rem;
+    margin: 0 auto;
+}
+
+.calendrier{
+    margin: 5% auto 0;
+    height: 70vh;
+    width: 60%;
+    border: 1px solid red;
+}
+
+.titreEvenement{
+    background-color: red;
+    width: 17%;
+    min-width: fit-content;
+    height: 15%;
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+.titreEvenement h2{
+    color: white;
+    padding: 0.5%;
+}
+
+.slidder2{
+    height: 70%;
+    background-color: green;
+}
+
+.slidder2Header{
+    height: 100%;
+    display: flex;
+}
+
+.dateEvenement{
+    border: 1px solid red;
+    background-color: white;
+    height: 100%;
+    width: 28.5%;
+    min-width: 225px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#numDate h2{
+    font-size: 5rem;
+}
+
+.imgEvenement{
+    background-color: #165999;
+    width: 71.5%;
+    height: 100%;
+}
+
+.slidder2Description{
+    padding: 1%;
+}
+.slidder2Description ul{
+    display: flex;
+    gap: 5%;
+}
+
+.slidder2Fleche{
+    margin-left: 95%;
+    display: flex;
+    flex-direction: column;
+}
+.slidder2Fleche li{
+    width: fit-content;
+}
+.slidder2Fleche li img{
+    width: 75%;
+}
+
+#flecheGauche{
+    transform: rotate(180deg);
+}
+
+.collectionCalendrier{
+    margin: 5% auto;
+    text-align: center;
+    width: fit-content;
+    padding: 1%;
+    background-color: red;
+    border-radius: 25px;
+}
+.collectionCalendrier p{
+    color: white;
+}
+
+/* section temoignage */
+#temoignage{
+    padding-top: 5%;
+}
+
+.titreTemoignage{
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.conteneurTemoignage{
+    max-width: 700px;
+    margin: 7% auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+.conteneurTemoignage h2{
+    margin: 0 0 10px 20%;
+    height: 2%;
+    width: 20%;
+    border-bottom: 2px solid black;
+}
+.conteneurTemoignage p{
+    line-height: 1.4;
+}
+.conteneurTemoignage::after{
+    content: "";
+    display: block;
+    clear: both;
+} 
+.conteneurTemoignage img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    float: left;
+    shape-outside: margin-box;
+    margin:  0 20px 5px 0;
+}
+
+.collectionTemoignage{
+    border: 1px solid red;
+    width: fit-content;
+    margin-left: 65%;
+    padding: 1%;
+    border-radius: 25px;
+}
+.collectionTemoignage p{
+    color: red;
+    text-align: center;
+}
+
+/* footer */
+footer{
+    background-color: var(--bleu);
+    clip-path: polygon(0% 15%, 100% 0%, 100% 100%, 0 100%);
+    outline: auto;
+    padding: 5% 0;
+    display: flex;
+}
+
+.imgLogo{
+    width: 13%;
+    margin-left: 5%;
+}
+.imgLogo img{
+    width: 100%;
+}
+
+.gestion{
+    width: 40%;
+    color: var(--blanc);
+    margin-left: auto;
+    margin-right: 15%;
+    display: flex;
+    justify-content: space-around;
+}
+.gestion a{
+    color: var(--blanc);
+}
+.gestion li{
+    padding-bottom: 15%;
+}
+
+.titreDeLaSection{
+    margin-bottom: 50%;
+    font-size: 1.5rem;
+}
+
+@media (max-width:802px) {
+    .calendrier{
+        width: 100%;
+    }
+    
+}
+
+@media (max-width:426px) {
+    .conteneurAuthentification{
+        display: flex;
+        flex-direction: column;
+    }
+    .entite{
+        width: 100%;
+    }
+    #video{
+        display: flex;
+        flex-direction: column;
+    }
+    .emplacementVideo{
+        width: 80%;
+    }
+    .slidder2Header{
+        flex-direction: column;
+    }
+    .slidder2Description{
+        height: fit-content;
+    }
+    .slidder2Fleche{
+        justify-content: space-around;
+    }
+    .calendrier{
+        border: none;
+    }
+    .titreEvenement{
+        width: 100%;
+        position: relative;
+    }
+    .dateEvenement{
+        width: 100%;
+    }
+    .titreTemoignage{   
+        text-align: center;
+    }
+    .conteneurTemoignage{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .conteneurTemoignage h2{
+        margin: 0 0 10% 0;
+    }
+    .collectionTemoignage{
+        margin: 0 auto;
+    }
+    footer{
+        padding: 15% 0;
+    }
+}
