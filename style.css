@@ -1,4 +1,4 @@
-:root{
+:root{ 
     --blanc: #fff;
     --blanc2: #F1F1F1;
     --gris: #f3f3f3;
@@ -34,9 +34,15 @@ section{
     min-height: 100vh;
 }
 
+/* body */
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
 /* header */
 header{
     height: 22vh;
+    min-height: 100px;
     position: relative;
     border-bottom: 1px solid black;
 }
@@ -52,6 +58,7 @@ header li{
 
 .topHeaderMenue{
     height: 5.5vh;
+    min-height: 20px;
     background-color: var(--gris2);
 }
 .topHeaderMenue ul{
@@ -99,7 +106,6 @@ header li{
     padding: 10% 0;
 }
 #authentification h1{
-    background-color: var(--gris);
     width: fit-content;
     margin: 0 auto;
     font-size: 2rem;
@@ -122,14 +128,13 @@ header li{
 
 .entite{
     width: 50%;
-    border: 1px solid var(--gris2 );
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .entite img{
     border-radius: 5px;
-    width: 45%;
+    width: 65%;
 }
 .entite h2{
     padding: 1% 0;
@@ -166,9 +171,13 @@ header li{
     color: var(--blanc2);
 }
 
+.titreVideo{
+    text-align: center;
+    width: 100%;
+}
+
 .emplacementVideo{
     width: 35%;
-    border: 1px solid black;
 }
 .emplacementVideo video{
     width: 100%;
@@ -205,7 +214,6 @@ header li{
 
 .slidder2{
     height: 70%;
-    background-color: green;
 }
 
 .slidder2Header{
@@ -230,9 +238,19 @@ header li{
 }
 
 .imgEvenement{
-    background-color: #165999;
+    border: 1px solid red;
     width: 71.5%;
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.imgEvenement img{
+    object-fit: cover;
+    aspect-ratio: 3/2;
+    width: 88%;
 }
 
 .slidder2Description{
@@ -376,15 +394,23 @@ footer{
     .entite{
         width: 100%;
     }
+    .entite img{
+        margin-top: 13%;
+        border-radius: 5px;
+        width: 80%;
+    }
     #video{
         display: flex;
         flex-direction: column;
     }
     .emplacementVideo{
-        width: 80%;
+        width: 90%;
     }
     .slidder2Header{
         flex-direction: column;
+    }
+    .imgEvenement{
+        width: 100%;
     }
     .slidder2Description{
         height: fit-content;
